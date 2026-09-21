@@ -1,1 +1,360 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AQUABAS — India Aquaculture & Water Intelligence Dashboards</title>
+<meta name="description" content="AQUABAS — four Power BI dashboards covering species intelligence, production economics, water-resource sustainability and water-quality monitoring across Indian aquaculture, built under Mul Biotech Farms.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
 
+<nav class="topnav">
+  <div class="wrap">
+    <div class="brand"><div class="mark">≈</div><div>AQUABAS<small>AQUACULTURE INTEL</small></div></div>
+    <div class="navlinks">
+      <a href="#dashboard">Dashboards</a>
+      <a href="#model">Data Model</a>
+      <a href="#pipeline">Pipeline</a>
+      <a href="#repo">Repository</a>
+      <a href="#team">Team</a>
+      <a href="#setup">Setup</a>
+    </div>
+    <div class="navmeta">Mul Biotech Farms · 2026</div>
+    <button class="hamburger" id="menuOpen" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mm-top">
+    <div class="brand"><div class="mark">≈</div><div>AQUABAS<small>AQUACULTURE INTEL</small></div></div>
+    <button class="mm-close" id="menuClose" aria-label="Close menu">✕</button>
+  </div>
+  <div class="mm-links">
+    <a href="#dashboard">Dashboards</a>
+    <a href="#model">Data Model</a>
+    <a href="#pipeline">Pipeline</a>
+    <a href="#repo">Repository</a>
+    <a href="#team">Team</a>
+    <a href="#setup">Setup</a>
+  </div>
+  <div class="mm-actions">
+    <a class="btn primary" href="#dashboard">Open the dashboards</a>
+    <a class="btn ghost" href="#model">See the data model</a>
+  </div>
+  <div class="mm-ledger">
+    <small>Project ledger &nbsp;·&nbsp; Mul Biotech Farms &nbsp;·&nbsp; 2026</small>
+    <div class="mm-ledger-row"><span>States covered</span><b>28</b></div>
+    <div class="mm-ledger-row"><span>Power BI reports</span><b>4</b></div>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">AQUACULTURE, WATER RESOURCES & FISHERIES INTELLIGENCE · INDIA</div>
+    <h1>A working view of <i>species, water & sustainability</i> across Indian aquaculture.</h1>
+    <p class="lead">Four independent research workbooks — species & risk intelligence, inland production economics, water-resource sustainability, and water-quality monitoring — covering 28 states, each built by a different contributor at Mul Biotech Farms.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="#dashboard">Open the dashboards</a>
+      <a class="btn ghost" href="#model">See the data model</a>
+    </div>
+  </div>
+</header>
+
+<div class="ledger">
+  <div class="wrap">
+    <div><small>STATES COVERED</small><strong>28</strong><em>core states across all four modules</em></div>
+    <div><small>SPECIES TRACKED</small><strong>32</strong><em>fresh + brackish + marine + cold-water</em></div>
+    <div><small>WATER QUALITY PARAMETERS</small><strong>11</strong><em>pH to heavy metals, vs BIS limits</em></div>
+    <div><small>RESEARCH DATA TABLES</small><strong>27</strong><em>across the four workbooks</em></div>
+    <div><small>POWER BI REPORTS</small><strong>4</strong><em>one per contributor</em></div>
+  </div>
+</div>
+
+<section class="block" id="dashboard">
+  <div class="wrap">
+    <div class="section-head"><span class="num">01 — LIVE REPORTS</span></div>
+    <h2>Four Power BI dashboards</h2>
+    <p class="section-sub">Select a module below and download its <code>.pbix</code> package — open it in Power BI Desktop to explore the full interactive report.</p>
+
+    <div class="tabbar">
+      <button class="tabbtn active" data-tab="t1">Production & Species</button>
+      <button class="tabbtn" data-tab="t2">Inland Intelligence</button>
+      <button class="tabbtn" data-tab="t3">Sustainability & Risk</button>
+      <button class="tabbtn" data-tab="t4">Water Intelligence</button>
+    </div>
+
+    <div class="reportpanel active" id="t1">
+      <div class="rp-meta">
+        <span>MODULE 01 · ROSHAN MIHAVEL</span>
+        <h3>Aquaculture Production & Species Performance Dashboard</h3>
+        <p>Species diversity, farming systems, production volume, water quality, economics, hatchery & seed capacity, market price, risk and advantage/constraint intelligence across 28 states — 32 species, 56 state-level risk records and 224 advantage/constraint entries.</p>
+        <a class="dl-link" href="javascript:void(0)" data-href="downloads/Roshan_pbix.zip" download="Roshan_pbix.zip">↓ Download Aquaculture Production & Species Performance</a>
+      </div>
+      <div class="rp-preview"><div class="icon">◉</div><b>Production & Species Performance</b><small>Open the package in Power BI Desktop, or publish it and swap this panel for the live embed URL.</small></div>
+    </div>
+
+    <div class="reportpanel" id="t2">
+      <div class="rp-meta">
+        <span>MODULE 02 · ABHAY JAISWAL</span>
+        <h3>India Inland Aquaculture Intelligence Dashboard</h3>
+        <p>State-wise inland fish production, water resources, infrastructure, seed production, species-wise output, economics and PMMSY government scheme funding across 28 states.</p>
+        <a class="dl-link" href="javascript:void(0)" data-href="downloads/Abhay.zip" download="Abhay.zip">↓ Download India Inland Aquaculture Intelligence</a>
+      </div>
+      <div class="rp-preview"><div class="icon">◌</div><b>Inland Aquaculture Intelligence</b><small>Open the package in Power BI Desktop, or publish it and swap this panel for the live embed URL.</small></div>
+    </div>
+
+    <div class="reportpanel" id="t3">
+      <div class="rp-meta">
+        <span>MODULE 03 · ANIRUDDH SHEDGE</span>
+        <h3>Aquaculture Sustainability Dashboard: Resource Utilization & Risk Analysis</h3>
+        <p>Water resource base, actual-vs-potential utilization trends, a multi-year sustainability risk matrix, future resource potential and institutional investment (PMMSY / NFDB) tracking across 28 states.</p>
+        <a class="dl-link" href="javascript:void(0)" data-href="downloads/Aniruddha_pbix.zip" download="Aniruddha_pbix.zip">↓ Download Aquaculture Sustainability: Resource Utilization & Risk Analysis</a>
+      </div>
+      <div class="rp-preview"><div class="icon">◈</div><b>Sustainability & Risk Analysis</b><small>Open the package in Power BI Desktop, or publish it and swap this panel for the live embed URL.</small></div>
+    </div>
+
+    <div class="reportpanel" id="t4">
+      <div class="rp-meta">
+        <span>MODULE 04 · GULSHAN GUPTA</span>
+        <h3>Aquaculture & Water Intelligence Dashboard</h3>
+        <p>A registry of monitored reservoirs, ponds and hydrological stations, plus pH, dissolved oxygen, BOD, COD, TDS, turbidity and heavy-metal readings checked against BIS drinking-water standards across 8 states.</p>
+        <a class="dl-link" href="javascript:void(0)" data-href="downloads/gulshan.pbix" download="gulshan.pbix">↓ Download Aquaculture & Water Intelligence</a>
+      </div>
+      <div class="rp-preview"><div class="icon">◇</div><b>Aquaculture & Water Intelligence</b><small>Open the file in Power BI Desktop, or publish it and swap this panel for the live embed URL.</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="block alt" id="model">
+  <div class="wrap">
+    <div class="section-head"><span class="num">02 — ARCHITECTURE</span></div>
+    <h2>Four workbooks, four data models</h2>
+    <p class="section-sub">Each contributor built and cleaned their own workbook independently — no shared schema. Every table below is joined internally on <code>State</code>.</p>
+
+    <div class="model" style="margin-bottom:34px">
+      <div class="dim-card">
+        <span>MODULE 01 · ROSHAN</span>
+        <h3>Production & Species Performance</h3>
+        <ul>
+          <li>dim_state — 28 states</li>
+          <li>State · Region</li>
+          <li>Contributor · SourceSheet</li>
+        </ul>
+      </div>
+      <div class="fact-grid">
+        <div class="fact-card"><b>Fact_Species_Diversity</b><span class="cols">State · Species · Culture environment</span><em>100 rows · 32 species</em></div>
+        <div class="fact-card"><b>Fact_System_Area</b><span class="cols">State · Dominant farming system · Estimated area/units</span><em>28 rows</em></div>
+        <div class="fact-card"><b>Fact_Production_Volume</b><span class="cols">State · Total production</span><em>28 rows</em></div>
+        <div class="fact-card"><b>Fact_Water_Quality</b><span class="cols">State · Water type · Temp/pH/DO range</span><em>28 rows</em></div>
+        <div class="fact-card"><b>Fact_Economics</b><span class="cols">State · Dominant system · Input cost · Output value</span><em>30 rows</em></div>
+        <div class="fact-card"><b>Fact_Hatchery_Seed</b><span class="cols">State · Hatchery base · Seed capacity · Peak season</span><em>28 rows</em></div>
+        <div class="fact-card"><b>Fact_Market_Price</b><span class="cols">State · Key species · Farm-gate price (₹/kg)</span><em>28 rows</em></div>
+        <div class="fact-card"><b>Fact_Risks</b><span class="cols">State · Risk type · Detail</span><em>56 rows</em></div>
+        <div class="fact-card"><b>Fact_AdvantagesConstraints</b><span class="cols">State · Type · Detail</span><em>224 rows</em></div>
+      </div>
+    </div>
+
+    <div class="model" style="margin-bottom:34px">
+      <div class="dim-card">
+        <span>MODULE 02 · ABHAY</span>
+        <h3>Inland Aquaculture Intelligence</h3>
+        <ul>
+          <li>28 states</li>
+          <li>Source: PIB / DoF handbook</li>
+        </ul>
+      </div>
+      <div class="fact-grid">
+        <div class="fact-card"><b>Inland Production</b><span class="cols">State · Year · Production (tonnes) · Growth % · Value · Rank</span><em>28 states</em></div>
+        <div class="fact-card"><b>Inland Water Resources</b><span class="cols">Pond · Tank · Reservoir · Lake area · River/canal length</span><em>28 states</em></div>
+        <div class="fact-card"><b>Aquaculture Infrastructure</b><span class="cols">Hatcheries · Seed farms · Feed mills · Cold storages · Ice plants</span><em>28 states</em></div>
+        <div class="fact-card"><b>Fish Seed Production</b><span class="cols">Seed production · Hatchery capacity · Requirement · Availability</span><em>28 states</em></div>
+        <div class="fact-card"><b>Species-wise Production</b><span class="cols">Carp · Catfish · Tilapia · Pangasius · Trout · Prawn · Other</span><em>28 states</em></div>
+        <div class="fact-card"><b>Economics</b><span class="cols">Production value · Farm-gate price · Employment</span><em>28 states</em></div>
+        <div class="fact-card"><b>Government Schemes</b><span class="cols">PMMSY approved cost · Central share · Released funds · Beneficiaries</span><em>28 states</em></div>
+      </div>
+    </div>
+
+    <div class="model" style="margin-bottom:34px">
+      <div class="dim-card">
+        <span>MODULE 03 · ANIRUDDH</span>
+        <h3>Sustainability: Utilization & Risk</h3>
+        <ul>
+          <li>28 states</li>
+          <li>Source: DoF / MPEDA / ICAR</li>
+        </ul>
+      </div>
+      <div class="fact-grid">
+        <div class="fact-card"><b>Water Resource Base</b><span class="cols">Rivers/canals · Ponds/tanks · Reservoirs · Wetlands · Brackish/saline area</span><em>28 states</em></div>
+        <div class="fact-card"><b>Resource Utilization Trend</b><span class="cols">Year · State · Water-body type · Potential vs used area · Utilization %</span><em>259 rows</em></div>
+        <div class="fact-card"><b>Sustainability Risk</b><span class="cols">Year · State · Culture system · Risk category · Risk score (1-3)</span><em>496 rows</em></div>
+        <div class="fact-card"><b>Future Potential & Practices</b><span class="cols">Untapped potential · Recommended practice · Certification · Target year</span><em>28+ rows</em></div>
+        <div class="fact-card"><b>Institutions & Investments</b><span class="cols">PMMSY / NFDB allocation · Outlay · Beneficiaries · Status</span><em>~20 rows</em></div>
+      </div>
+    </div>
+
+    <div class="model">
+      <div class="dim-card">
+        <span>MODULE 04 · GULSHAN</span>
+        <h3>Aquaculture & Water Intelligence</h3>
+        <ul>
+          <li>8 states</li>
+          <li>Source: CPCB / CGWB / APWRIMS</li>
+        </ul>
+      </div>
+      <div class="fact-grid">
+        <div class="fact-card"><b>State_Water_Bodies</b><span class="cols">Year · State · District · Water body type/name · Storage capacity</span><em>108 rows</em></div>
+        <div class="fact-card"><b>Water_Quality</b><span class="cols">Date · Water body · Parameter · Value · Standard limit · Status</span><em>114 readings · 11 parameters</em></div>
+        <div class="fact-card"><b>State_Quality_Summary</b><span class="cols">Year · State · Avg pH/DO/BOD/COD/TDS/Turbidity · Site status counts</span><em>209 rows</em></div>
+        <div class="fact-card"><b>State_Intelligence</b><span class="cols">Year · State · Water body totals · Quality % breakdown</span><em>208 rows</em></div>
+        <div class="fact-card"><b>Reference_Standards</b><span class="cols">Parameter · BIS min/max limit · Category</span><em>BIS IS 10500:2012</em></div>
+        <div class="fact-card"><b>Source_Metadata</b><span class="cols">Dataset · Source org · Coverage · Collection method</span><em>Source documentation</em></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="pipeline">
+  <div class="wrap">
+    <div class="section-head"><span class="num">03 — ENGINEERING</span></div>
+    <h2>From official records to four decision-ready workbooks</h2>
+    <p class="section-sub">Each contributor took government and institutional sources through the same seven stages, independently, to reach a clean Power BI-ready workbook.</p>
+
+    <div class="pipeline">
+      <div class="pstep"><div class="pnum">01</div><div class="picon">🛰️</div><div><h4>Collect</h4><p>Each contributor researched their assigned states into a shared 29-tab workbook, pulling from PIB, DoF Handbook of Fisheries Statistics, CPCB, CGWB, APWRIMS, MPEDA, ICAR institutes and PMMSY records.</p></div></div>
+      <div class="pstep"><div class="pnum">02</div><div class="picon">⇩</div><div><h4>Ingest</h4><p>Import state-wise and year-wise records from government portals and handbooks into a working Excel layer.</p></div></div>
+      <div class="pstep"><div class="pnum">03</div><div class="picon">🧹</div><div><h4>Clean</h4><p>Handle missing states, blank readings, inconsistent state/UT naming and duplicate entries across years.</p></div></div>
+      <div class="pstep"><div class="pnum">04</div><div class="picon">✓</div><div><h4>Validate</h4><p>Check production totals, water-quality readings against BIS limits, and utilization percentages against source formulas.</p></div></div>
+      <div class="pstep"><div class="pnum">05</div><div class="picon">⚙</div><div><h4>Transform</h4><p>Standardize species names, state/region labels, units, risk scores and quality-status categories.</p></div></div>
+      <div class="pstep"><div class="pnum">06</div><div class="picon">◈</div><div><h4>Analyze</h4><p>Generate production trends, sustainability risk scores, utilization rates and water-quality compliance status.</p></div></div>
+      <div class="pstep"><div class="pnum">07</div><div class="picon">▦</div><div><h4>Visualize</h4><p>Deliver four independent Power BI dashboards — one per contributor, one per data model.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block alt" id="repo">
+  <div class="wrap">
+    <div class="section-head"><span class="num">04 — REPOSITORY</span></div>
+    <h2>Everything in one package</h2>
+    <p class="section-sub">The four dashboard packages, their cleaned data workbooks, the original raw research workbook, and the website source, all bundled together.</p>
+
+    <div class="repo-list">
+      <div class="repo-row"><span class="rhead"><span class="ricon">📊</span><b>Aquaculture Production & Species Performance dashboard.pbix</b></span><span class="rdesc">Aquaculture Production & Species Performance dashboard package</span><span class="rsize">56 KB · powerbi/</span><a href="javascript:void(0)" data-href="downloads/Roshan_pbix.zip" download="Roshan_pbix.zip">↓ Download</a></div>
+      <div class="repo-row"><span class="rhead"><span class="ricon">📊</span><b>India Inland Aquaculture Intelligence dashboard.pbix</b></span><span class="rdesc">India Inland Aquaculture Intelligence dashboard package</span><span class="rsize">128 KB · powerbi/</span><a href="javascript:void(0)" data-href="downloads/Abhay.zip" download="Abhay.zip">↓ Download</a></div>
+      <div class="repo-row"><span class="rhead"><span class="ricon">📊</span><b>Aquaculture Sustainability dashboard.pbix</b></span><span class="rdesc">Aquaculture Sustainability dashboard package</span><span class="rsize">143 KB · powerbi/</span><a href="javascript:void(0)" data-href="downloads/Aniruddha_pbix.zip" download="Aniruddha_pbix.zip">↓ Download</a></div>
+      <div class="repo-row"><span class="rhead"><span class="ricon">📊</span><b>Aquaculture & Water Intelligence dashboard.pbix</b></span><span class="rdesc">Aquaculture & Water Intelligence dashboard</span><span class="rsize">142 KB · powerbi/</span><a href="javascript:void(0)" data-href="downloads/gulshan.pbix" download="gulshan.pbix">↓ Download</a></div>
+      <div class="repo-row"><span class="rhead"><span class="ricon">🗃️</span><b>Aquaculture Production & Species Performance.xlsx</b></span><span class="rdesc">Aquaculture Production & Species Performance source data — 9 tables, 28 states</span><span class="rsize">36 KB · data/</span><a href="javascript:void(0)" data-href="downloads/Aquaculture_Production_Species_Performance.xlsx" download="Aquaculture Production & Species Performance.xlsx">↓ Download</a></div>
+      <div class="repo-row"><span class="rhead"><span class="ricon">🗃️</span><b>India Inland Aquaculture Intelligence.xlsx</b></span><span class="rdesc">India Inland Aquaculture Intelligence source data — 7 sheets, 28 states</span><span class="rsize">36 KB · data/</span><a href="javascript:void(0)" data-href="downloads/India_Inland_Aquaculture_Intelligence.xlsx" download="India Inland Aquaculture Intelligence.xlsx">↓ Download</a></div>
+      <div class="repo-row"><span class="rhead"><span class="ricon">🗃️</span><b>Aquaculture Sustainability.xlsx</b></span><span class="rdesc">Aquaculture Sustainability source data — 5 sheets, 28 states</span><span class="rsize">72 KB · data/</span><a href="javascript:void(0)" data-href="downloads/Aquaculture_Sustainability.xlsx" download="Aquaculture Sustainability.xlsx">↓ Download</a></div>
+      <div class="repo-row"><span class="rhead"><span class="ricon">🗃️</span><b>Aquaculture & Water Intelligence.xlsx</b></span><span class="rdesc">Aquaculture & Water Intelligence source data — 6 sheets, 8 states</span><span class="rsize">72 KB · data/</span><a href="javascript:void(0)" data-href="downloads/Aquaculture_Water_Intelligence.xlsx" download="Aquaculture & Water Intelligence.xlsx">↓ Download</a></div>
+      <div class="repo-row"><span class="rhead"><span class="ricon">🗂️</span><b>State_Assessment_Dashboard_Aquaculture.xlsx</b></span><span class="rdesc">The original 29-tab research workbook from all four contributors, before cleaning</span><span class="rsize">684 KB · data/</span><a href="javascript:void(0)" data-href="downloads/State_Assessment_Dashboard_Aquaculture.xlsx" download="State_Assessment_Dashboard_Aquaculture.xlsx">↓ Download</a></div>
+      <div class="repo-row"><span class="rhead"><span class="ricon">🗂️</span><b>index.html · css/ · js/</b></span><span class="rdesc">This website — source files</span><span class="rsize">~35 KB · root</span><a href="index.html">View</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="team">
+  <div class="wrap">
+    <div class="section-head"><span class="num">05 — TEAM</span></div>
+    <h2>Four Researchers, one mentor</h2>
+    <p class="section-sub">Each of the four dashboards was researched and built by a different contributor, working under the same mentor at Mul Biotech Farms.</p>
+
+    <div class="team-row">
+      <div class="tcard"><div class="avatar">R</div><h4>Roshan Mihavel</h4><span class="role">Researcher · Mul Biotech Farms</span><p>Aquaculture Production & Species Performance dashboard</p></div>
+      <div class="tcard"><div class="avatar">AJ</div><h4>Abhay Jaiswal</h4><span class="role">Researcher · Mul Biotech Farms</span><p>India Inland Aquaculture Intelligence dashboard</p></div>
+      <div class="tcard"><div class="avatar">AS</div><h4>Aniruddh Shedge</h4><span class="role">Researcher · Mul Biotech Farms</span><p>Aquaculture Sustainability dashboard</p></div>
+      <div class="tcard"><div class="avatar">GG</div><h4>Gulshan Gupta</h4><span class="role">Researcher · Mul Biotech Farms</span><p>Aquaculture & Water Intelligence dashboard</p></div>
+    </div>
+
+    <div class="mentor-row">
+      <div class="avatar">SR</div>
+      <div><b>Soumodip Atanu Roy</b><span>Project Mentor · Mul Biotech Farms</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="block alt" id="setup">
+  <div class="wrap">
+    <div class="section-head"><span class="num">06 — SETUP</span></div>
+    <h2>Run it yourself</h2>
+    <p class="section-sub">Open the website locally, then open any dashboard in Power BI Desktop.</p>
+
+    <div class="setup-list">
+      <div class="sstep"><div class="snum">1</div><div><h4>Open the website</h4><p>Extract this folder and double-click <code>index.html</code> — no server or build step needed.</p></div></div>
+      <div class="sstep"><div class="snum">2</div><div><h4>Pick a dashboard</h4><p>Go to <a href="#dashboard">Live Reports</a>, choose a module, and download its <code>.pbix</code> package.</p></div></div>
+      <div class="sstep"><div class="snum">3</div><div><h4>Extract if zipped</h4><p>Three of the four packages are zipped — extract them first to get the underlying <code>.pbix</code> file.</p></div></div>
+      <div class="sstep"><div class="snum">4</div><div><h4>Open in Power BI Desktop</h4><p>Double-click the <code>.pbix</code> file. Power BI Desktop is free from Microsoft if not already installed.</p></div></div>
+      <div class="sstep"><div class="snum">5</div><div><h4>Optional: publish for a live embed</h4><p>Publish the report to Power BI, then replace a module's preview panel with an <code>&lt;iframe&gt;</code> using that report's embed URL.
+        <pre class="codeblock">&lt;iframe src="YOUR_EMBED_URL" width="100%" height="480"&gt;&lt;/iframe&gt;</pre>
+      </p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="credits">
+  <div class="wrap">
+    <div class="section-head"><span class="num">07 — CREDITS & ATTRIBUTION</span></div>
+    <h2>Built under Mul Biotech Farms</h2>
+
+    <div class="credit-grid">
+      <div class="credit-block">
+        <b>ORGANISATION</b>
+        <h3>Mul Biotech Farms</h3>
+        <span>Aquaculture Intelligence Platform · India, 2026</span>
+      </div>
+      <div class="credit-block">
+        <b>PROJECT MENTOR</b>
+        <h3>Soumodip Atanu Roy</h3>
+        <span>Mul Biotech Farms</span>
+      </div>
+    </div>
+
+    <div class="credit-block" style="margin-top:26px">
+      <b>RESEARCH & DASHBOARD TEAM</b>
+      <ul>
+        <li><b>Roshan Mihavel</b> — Aquaculture Production & Species Performance dashboard</li>
+        <li><b>Abhay Jaiswal</b> — India Inland Aquaculture Intelligence dashboard</li>
+        <li><b>Aniruddh Shedge</b> — Aquaculture Sustainability dashboard</li>
+        <li><b>Gulshan Gupta</b> — Aquaculture & Water Intelligence dashboard</li>
+      </ul>
+    </div>
+
+    <div class="disclaimer">
+      This dashboard and its underlying datasets are a demo project built under Mul Biotech Farms. Data shown is sample/demo data — not live production, market or sensor data. If you share, cite, or build upon this work, please credit Mul Biotech Farms and the contributing team.
+    </div>
+  </div>
+</section>
+
+<footer>
+  Aquaculture Intelligence · AQUABAS · Mul Biotech Farms · 2026<br>
+  Mentor: Soumodip Atanu Roy · Mul Biotech Farms<br>
+  <a href="https://share.google/TKasV1bdEdwpiktEd" target="_blank" rel="noopener">Project reference link</a>
+</footer>
+
+<div class="gate-overlay" id="gateOverlay">
+  <div class="gate-box">
+    <div class="gate-filename" id="gateFilename"></div>
+    <h3>Before you download</h3>
+    <p>Please share your name and email so we know who's using this dataset. Your download will start right after.</p>
+    <form id="gateForm">
+      <label>Name</label>
+      <input type="text" id="gateName" required placeholder="Your full name">
+      <label>Email</label>
+      <input type="email" id="gateEmail" required placeholder="you@example.com">
+      <div class="gate-error" id="gateError">Please fill in both fields with a valid email.</div>
+      <div class="gate-actions">
+        <button type="button" class="gate-cancel" id="gateCancel">Cancel</button>
+        <button type="submit" class="gate-submit">Continue to download</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
